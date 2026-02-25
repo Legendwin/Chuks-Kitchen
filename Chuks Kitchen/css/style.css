@@ -1,0 +1,661 @@
+/* HEX Color Codes */
+:root {
+    --primary-orange: #ff7a18;
+    --soft-orange: #ffb066;
+    --light-orange: #ffe1c4;
+    --dark-orange: #c95400;
+    --primary-pink: #ff4f9a;
+    --soft-pink: #ff9ac7;
+    --light-pink: #ffe1ee;
+    --dark-pink: #b0005a;
+    --primary-blue: #1e88e5;
+    --soft-blue: #64b5f6;
+    --light-blue: #e3f2fd;
+    --dark-blue: #0d47a1;
+    --pure-white: #ffffff;
+    --soft-gray: #f3f4f6;
+    --charcoal-black: #1f2937;
+    --dark-gray: #4b5563;
+    --muted-gray: #9ca3af;
+    --brown: #62422E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--soft-gray);
+}
+
+/* Navbar Section */
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/Welcome.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    align-items: center;
+    margin: auto;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--pure-white);
+}
+
+nav h1 {
+    font-family: "Island Moments", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--primary-orange);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul a {   
+    text-decoration: none;
+    color: var(--charcoal-black);
+}
+
+nav ul a:hover {
+    color: var(--dark-orange);
+}
+
+nav ul a.active {
+    color: var(--primary-orange);
+}
+
+nav ul a li {
+    display: inline-block;
+    position: relative;
+    margin: 0 80px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: var(--primary-orange);
+    color: var(--pure-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: var(--dark-orange);
+}
+
+nav .menu {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-slogan {
+    position: absolute;
+    top: 220px;
+    margin: 80px 30px;
+    left: 10px;
+    color: var(--pure-white);
+}
+
+.nav-slogan h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.nav-slogan p {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.nav-slogan button {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--primary-orange);
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    color: var(--pure-white);
+}
+
+.nav-slogan button:hover {
+    background-color: var(--dark-orange);
+}
+
+.search {
+    position: absolute;
+    top: 705px;
+    left: 250px;
+    display: flex;
+}
+
+.search i {
+    font-size: 24px;
+    color: var(--dark-gray);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.banner input {
+    width: 1069px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 12px 0 40px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.banner input::placeholder {
+    color: var(--muted-gray);
+    font-size: 16px;
+}
+
+/* Main Section */
+main {
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 100px auto auto auto;
+}
+
+/* Preview Box Sections */
+.preview-box {
+    margin-bottom: 80px;
+}
+
+.preview-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--charcoal-black);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.preview-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.preview-box .more {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Category Cards - Popular Categories */
+.preview-box:first-child .preview-card {
+    background-color: var(--pure-white);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 400px;
+}
+
+.preview-box:first-child .preview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.preview-box:first-child .preview-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.preview-box:first-child .preview-card h3 {
+    padding: 20px 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--charcoal-black);
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+/* Chef's Specials Cards */
+.preview-box:last-child .preview-card {
+    background-color: var(--pure-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    height: 500px;
+}
+
+.preview-box:last-child .preview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.preview-box:last-child .preview-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.preview-box:last-child .preview-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--charcoal-black);
+    padding: 20px 15px 10px 15px;
+    margin: 0;
+}
+
+.preview-box:last-child .preview-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--charcoal-black);
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 15px 15px 15px;
+    position: relative;
+    top: 50px;
+}
+
+.card-price .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-orange) !important;
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+
+.card-price button {
+    background-color: var(--primary-orange);
+    color: var(--pure-white);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.card-price button:hover {
+    background-color: var(--dark-orange);
+}
+
+/* Footer Section */
+footer {
+    color: var(--pure-white);
+}
+
+.addons {
+    background-image: url(../images/Desktop\ -\ 4.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.addon-info {
+    padding: 0 40px;
+    position: relative;
+    top: auto;
+    left: auto;
+}
+
+.addon-info h4 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.addon-info p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.addon-info button {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary-orange);
+    border: none;
+    cursor: pointer;
+    color: var(--pure-white);
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.addon-info button:hover {
+    background-color: var(--dark-orange);
+}
+
+/* Footer Bottom Section */
+.items {
+    background-color: var(--brown);
+    padding: 50px 60px 30px;
+    position: relative;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 30px;
+    max-width: 1400px;
+}
+
+.slogan h4 {
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-size: 37px;
+    color: var(--primary-orange);
+}
+
+.slogan p {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.quick-links h4, .contact h4 {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul a, .contact a, .links a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+    line-height: 1.6;
+    color: var(--pure-white);
+}
+
+.quick-links a:hover, .contact a:hover, .links a:hover {
+    color: var(--dark-orange);
+}
+
+/* Footer Bottom Copyright */
+.items > p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.top {
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.top:hover {
+    background-color: var(--dark-blue);
+}
+
+/* Media Responsiveness */
+@media (max-width: 1440px) {
+    .search {
+        left: 180px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav ul a li {
+        margin: 0 40px;
+    }
+
+    .preview-items {
+        gap: 60px;
+    }
+
+    main {
+        padding: 50px 30px;
+    }
+
+    .search {
+        left: 120px;
+    }
+
+    .banner input {
+        width: 969px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul a li {
+        margin: 0 24px;
+    }
+
+    .search {
+        left: 90px;
+    }
+
+    .banner input {
+        width: 840px;
+    }
+
+    .preview-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .preview-box:first-child .preview-card,
+    .preview-box:last-child .preview-card {
+        height: auto;
+    }
+
+    .card-price {
+        top: 0;
+        position: static;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul a li,
+    nav button {
+        display: none;
+    }
+
+    nav .menu {
+        display: block;
+    }
+
+    nav h1 {
+        font-size: 24px;
+    }
+
+    .nav-slogan {
+        top: 280px;
+        left: 20px;
+        margin: 0;
+    }
+
+    .nav-slogan h2 {
+        font-size: 28px;
+    }
+
+    .nav-slogan p {
+        font-size: 18px;
+    }
+
+    .search {
+        left: 25px;
+    }
+
+    .banner input {
+        width: 700px;
+    }
+    
+    main {
+        margin: 40px auto 20px auto;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .preview-items {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .preview-box {
+        width: 400px;
+    }
+
+    .preview-box:first-child .preview-card h3 {
+        margin-top: 10px;
+    }
+
+    .addon-info h4 {
+        font-size: 28px;
+    }
+
+    .addon-info p {
+        font-size: 15px;
+    }
+
+    .addons {
+        padding: 40px 0;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-slogan h2 {
+        font-size: 22px;
+    }
+
+    .nav-slogan p {
+        font-size: 16px;
+    }
+
+    .search {
+        left: 40px;
+    }
+
+    .banner input {
+        width: 320px;
+    }
+
+    .preview-box {        
+        width: 350px;
+    }
+
+    .preview-box h2 {
+        font-size: 24px;
+    }
+
+    .preview-box .more {
+        display: block;
+    }
+
+    .preview-box .preview-card:nth-child(n+4) {
+        display: none;
+    }
+
+    .preview-box:last-child .preview-card img {
+        height: 160px;
+    }
+
+    .card-price button {        
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .addon-info {
+        padding: 20px;
+    }
+
+    .slogan p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .search {
+        left: 35px;
+    }
+
+    .banner input {
+        width: 280px;
+    }
+
+    .preview-box {
+        width: 320px;
+    }
+
+    .slogan h4 {
+        font-size: 35px;
+    }
+}
