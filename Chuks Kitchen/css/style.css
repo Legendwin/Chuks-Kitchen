@@ -140,6 +140,7 @@ nav .menu {
     background-color: var(--dark-orange);
 }
 
+/* Search Bar */
 .search {
     position: absolute;
     top: 705px;

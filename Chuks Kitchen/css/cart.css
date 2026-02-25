@@ -31,6 +31,7 @@ body {
     background-color: var(--soft-gray);
 }
 
+/* Navbar Section */
 nav {
     align-items: center;
     margin: auto;
@@ -97,9 +98,12 @@ nav .menu {
 
 /* Main Section */
 main {
+    padding: 60px 40px;
     max-width: 1400px;
+    margin: 100px auto auto auto;
 }
 
+/* Cart Section */
 .cart {
     padding: 40px;
     background-color: var(--pure-white);
