@@ -15,7 +15,6 @@ The application provides customers with:
 ### Languages & Frameworks
 - **HTML5**: Semantic markup for accessibility and SEO
 - **CSS3**: Advanced styling with CSS custom properties (variables), Flexbox, and Grid layouts
-- **JavaScript**: (Framework ready - structure in place for progressive enhancement)
 
 ### Design Tools & Libraries
 - **Google Fonts**: Inter, Jost, Island Moments, and Poppins for consistent typography
@@ -24,7 +23,6 @@ The application provides customers with:
 
 ### Design Rationale
 - **CSS Variables**: Centralized color management for consistent branding and easy theme updates
-- **Mobile-First Approach**: 
 - **Semantic Structure**: Clean HTML hierarchy for maintainability and accessibility
 
 ## Project Structure
