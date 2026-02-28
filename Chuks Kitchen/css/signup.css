@@ -169,7 +169,7 @@ form #confirm-password {
     margin-bottom: 10px;
 }
 
-.check {
+form .check {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -177,11 +177,11 @@ form #confirm-password {
     font-weight: 500;
 }
 
-form .check input {
+.check input {
     width: 20px;
     height: 20px;
     margin-right: 8px;
-    margin-bottom: 0;
+    margin-bottom: 4px;
     padding: 0;
     cursor: pointer;
     accent-color: var(--primary-blue);
@@ -389,8 +389,16 @@ footer {
         padding: 20px;
     }
 
+    .check input {
+        margin-bottom: 6px;
+    }
+
+    .check label {
+        font-size: 13px;
+    }
+
     .cont-box i {
-        left: 70px;
+        left: 60px;
     }
 
     .slogan p {

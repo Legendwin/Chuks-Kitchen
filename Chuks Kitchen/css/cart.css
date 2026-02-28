@@ -424,24 +424,23 @@ footer {
 }
 
 @media (max-width: 480px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    .cart {
+        padding: 20px;
+    }
+
     .cart-items .cart-item {
-        width: 400px;
+        width: 100%;
         padding: 10px;
     }
 
     .cart-item img {
-        width: 130px;
-        height: 120px;
+        width: 120px;
+        height: 100px;
         margin-right: 10px;
-    }
-
-    .cart-item .details {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .cart-item .item-desc {
-        width: 100%;
     }
 
     .cart-item .item-desc h2 {
@@ -473,10 +472,6 @@ footer {
 }
 
 @media (max-width: 375px) {
-    .cart-items .cart-item {
-        width: 300px;
-    }
-
     .slogan h4 {
         font-size: 35px;
     }
